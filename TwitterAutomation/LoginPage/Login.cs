@@ -5,10 +5,11 @@ using SeleniumExtras.PageObjects;
 
 namespace TwitterAutomation.LoginPage
 {
-    public class Login
+    public  class Login
     {
-        
-        
+       
+
+
         public Login(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);
@@ -18,7 +19,7 @@ namespace TwitterAutomation.LoginPage
 
         [FindsBy(How = How.Name, Using = "username")]
         [CacheLookup]
-        public IWebElement userName;
+        public  IWebElement userName;
 
         [FindsBy(How = How.Id, Using = "login-password")]
         [CacheLookup]
@@ -28,8 +29,15 @@ namespace TwitterAutomation.LoginPage
         [CacheLookup]
         public IWebElement loginButton;
 
-        [FindsBy(How = How.Id, Using = "account-settings-link")]
+        [FindsBy(How = How.ClassName, Using = "col-xs-12")]
         [CacheLookup]
-        public IWebElement settingsButton;
+        public IWebElement webplayer;
+
+         [FindsBy(How = How.ClassName, Using = "CPgTPk9wPOVigmNI6xWP")]
+        [CacheLookup]
+        public IWebElement search;
+
+        // public IWebElement search = driver.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[1]/header/div[3]/div/div/form/input"));
+       
     }
 }

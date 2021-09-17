@@ -1,0 +1,64 @@
+2021-09-17 15:01:29,935 INFO Initializing SetUp
+2021-09-17 15:01:29,965 INFO Disabling notifications
+2021-09-17 15:01:33,120 INFO navigating control to chrome browser
+2021-09-17 15:01:37,211 DEBUG Navigating to corresponding URL
+2021-09-17 15:09:20,526 INFO Initializing SetUp
+2021-09-17 15:09:20,545 INFO Disabling notifications
+2021-09-17 15:09:22,922 INFO navigating control to chrome browser
+2021-09-17 15:09:28,250 DEBUG Navigating to corresponding URL
+2021-09-17 15:10:55,692 INFO Initializing SetUp
+2021-09-17 15:10:55,708 INFO Disabling notifications
+2021-09-17 15:10:58,089 INFO navigating control to chrome browser
+2021-09-17 15:11:01,770 DEBUG Navigating to corresponding URL
+2021-09-17 15:14:22,229 INFO Initializing SetUp
+2021-09-17 15:14:22,251 INFO Disabling notifications
+2021-09-17 15:14:24,531 INFO navigating control to chrome browser
+2021-09-17 15:14:28,705 DEBUG Navigating to corresponding URL
+2021-09-17 15:15:58,256 INFO Initializing SetUp
+2021-09-17 15:15:58,271 INFO Disabling notifications
+2021-09-17 15:16:00,667 INFO navigating control to chrome browser
+2021-09-17 15:16:04,470 DEBUG Navigating to corresponding URL
+2021-09-17 15:18:16,969 INFO Initializing SetUp
+2021-09-17 15:18:16,986 INFO Disabling notifications
+2021-09-17 15:18:19,358 INFO navigating control to chrome browser
+2021-09-17 15:18:23,455 DEBUG Navigating to corresponding URL
+2021-09-17 15:19:19,206 INFO Initializing SetUp
+2021-09-17 15:19:19,221 INFO Disabling notifications
+2021-09-17 15:19:21,385 INFO navigating control to chrome browser
+2021-09-17 15:19:25,531 DEBUG Navigating to corresponding URL
+2021-09-17 15:20:40,514 INFO Initializing SetUp
+2021-09-17 15:20:40,530 INFO Disabling notifications
+2021-09-17 15:20:42,731 INFO navigating control to chrome browser
+2021-09-17 15:20:46,086 DEBUG Navigating to corresponding URL
+2021-09-17 15:42:00,236 INFO Initializing SetUp
+2021-09-17 15:42:00,252 INFO Disabling notifications
+2021-09-17 15:42:02,468 INFO navigating control to chrome browser
+2021-09-17 15:42:06,370 DEBUG Navigating to corresponding URL
+2021-09-17 15:44:07,563 INFO Initializing SetUp
+2021-09-17 15:44:07,580 INFO Disabling notifications
+2021-09-17 15:44:09,855 INFO navigating control to chrome browser
+2021-09-17 15:44:13,458 DEBUG Navigating to corresponding URL
+2021-09-17 15:54:50,323 INFO Initializing SetUp
+2021-09-17 15:54:50,341 INFO Disabling notifications
+2021-09-17 15:54:56,731 INFO navigating control to chrome browser
+2021-09-17 15:55:00,303 DEBUG Navigating to corresponding URL
+2021-09-17 15:55:52,505 INFO Initializing SetUp
+2021-09-17 15:55:52,522 INFO Disabling notifications
+2021-09-17 15:55:55,106 INFO navigating control to chrome browser
+2021-09-17 15:55:58,745 DEBUG Navigating to corresponding URL
+2021-09-17 16:42:30,064 INFO Initializing SetUp
+2021-09-17 16:42:30,088 INFO Disabling notifications
+2021-09-17 16:42:32,579 INFO navigating control to chrome browser
+2021-09-17 16:42:36,383 DEBUG Navigating to corresponding URL
+2021-09-17 17:05:10,672 INFO Initializing SetUp
+2021-09-17 17:05:10,690 INFO Disabling notifications
+2021-09-17 17:05:13,368 INFO navigating control to chrome browser
+2021-09-17 17:05:17,262 DEBUG Navigating to corresponding URL
+2021-09-17 17:08:02,802 INFO Initializing SetUp
+2021-09-17 17:08:02,820 INFO Disabling notifications
+2021-09-17 17:08:05,371 INFO navigating control to chrome browser
+2021-09-17 17:08:08,899 DEBUG Navigating to corresponding URL
+2021-09-17 17:10:48,902 INFO Initializing SetUp
+2021-09-17 17:10:48,918 INFO Disabling notifications
+2021-09-17 17:10:51,108 INFO navigating control to chrome browser
+2021-09-17 17:10:54,773 DEBUG Navigating to corresponding URL

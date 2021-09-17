@@ -1,34 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-using System.Text;
+using log4net;
+using log4net.Repository;
+using System.Reflection;
 
 namespace TwitterAutomation.Base
 {
     public class Base
     {
         public static IWebDriver driver;
+        public static readonly ILog LogInfo = LogManager.GetLogger(typeof(Tests));
+
+        public static readonly ILoggerRepository loggerRepository = log4net.LogManager.GetRepository(Assembly.GetCallingAssembly());
+
+
 
         [SetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--disable-notifications");
-            driver = new ChromeDriver(options);
-            driver.Manage().Window.Maximize();
-            driver.Url = "https://accounts.spotify.com/en/login";
+            var file = new FileInfo("log4net.config");
+
+            log4net.Config.XmlConfigurator.Configure(loggerRepository, file);
+
+            try
+            {
+
+                LogInfo.Info("Initializing SetUp");
+
+                ChromeOptions options = new ChromeOptions();
+                options.AddArgument("--disable-notifications");
+                LogInfo.Info("Disabling notifications");
+                driver = new ChromeDriver(options);
+                LogInfo.Info("navigating control to chrome browser");
+                driver.Manage().Window.Maximize();
+                driver.Url = "https://accounts.spotify.com/en/login";
+                LogInfo.Debug("Navigating to corresponding URL");
+            }
+            catch(Exception e)
+            {
+                LogInfo.Error(e.Message);
+            }
            
             
         }
 
-      /*  [TearDown]
-        public void tearDwon()
-        {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1000);
-            driver.Quit();
-        }*/
+      
+
+      
+
+       
+
+       /*   [TearDown]
+          public void tearDwon()
+          {
+              driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1000);
+              driver.Quit();
+          }*/
     }
 }

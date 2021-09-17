@@ -3,23 +3,26 @@ using TwitterAutomation.Functions;
 using TwitterAutomation.LoginPage;
 using SeleniumExtras.PageObjects;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
+ 
 
 
-namespace TwitterAutomation
+namespace TwitterAutomation 
 {
     public class Tests : Base.Base
     {
         
-
+        
         [Test]
-        public void LoginUsingCredentials()
+        public void AssertTitle()
         {
-            Actions.LoginToTwitter(driver);
+            Actions.AssertTitleAfterSearchingApplication(driver);
         }
 
         [Test]
         public void loginUsingExcelData()
         {
+
             Login login = new Login(driver);
 
             AccessData.ExcelData.PopulateInCollection(@"C:\Users\vivek.g\source\repos\TwitterAutomation\TwitterAutomation\DataResouce\loginDeatils.xlsx");
@@ -31,9 +34,25 @@ namespace TwitterAutomation
             System.Threading.Thread.Sleep(1000);
 
             login.loginButton.Click();
+            Actions.Screenshot();
 
-            login.settingsButton.Click();
+           // login.settingsButton.Click();
+
+  
             
         }
+
+        [Test]
+        public static void Login()
+        {
+           Functions.Actions.LoginToSpotify(driver);
+            Assert.AreEqual(1, driver.WindowHandles.Count);
+        }
+        [Test]
+        public void SendKeysUsingSelenium()
+        {
+            Functions.Actions.Sendkeys();
+        }
+
     }
 }
